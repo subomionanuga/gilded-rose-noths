@@ -15,6 +15,14 @@
         null,
         null,
         null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
         null
       ],
       "/Users/student/Documents/projects/gilded-rose-noths/ruby/lib/gilded_rose.rb": [
@@ -77,9 +85,9 @@
         1,
         null,
         1,
-        1,
-        1,
-        1,
+        2,
+        2,
+        2,
         null,
         null,
         1,
@@ -88,6 +96,6 @@
         null
       ]
     },
-    "timestamp": 1551804189
+    "timestamp": 1551806644
   }
 }
