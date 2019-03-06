@@ -39,6 +39,17 @@
         null,
         null
       ],
+      "/Users/student/Documents/projects/gilded-rose-noths/ruby/lib/normal_item.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        14,
+        null,
+        null,
+        null
+      ],
       "/Users/student/Documents/projects/gilded-rose-noths/ruby/lib/item.rb": [
         1,
         1,
@@ -126,6 +137,10 @@
         1,
         null,
         1,
+        1,
+        1,
+        null,
+        1,
         15,
         null,
         null,
@@ -134,9 +149,7 @@
         null,
         16,
         8,
-        6,
         4,
-        null,
         null,
         null,
         8,
@@ -155,8 +168,8 @@
         null,
         null,
         null,
+        null,
         16,
-        14,
         null,
         16,
         6,
@@ -242,14 +255,6 @@
         null,
         null
       ],
-      "/Users/student/Documents/projects/gilded-rose-noths/ruby/lib/normal_item.rb": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
       "/Users/student/Documents/projects/gilded-rose-noths/ruby/spec/sulfuras_spec.rb": [
         1,
         null,
@@ -279,9 +284,12 @@
         2,
         null,
         null,
+        1,
+        null,
+        null,
         null
       ]
     },
-    "timestamp": 1551902465
+    "timestamp": 1551904547
   }
 }
