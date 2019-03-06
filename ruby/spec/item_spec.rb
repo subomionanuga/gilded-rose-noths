@@ -15,37 +15,6 @@ describe Item do
     expect(item[0].to_s).to eq("My goodies, 10, 50")
   end
 
-  describe "Update Normal Items" do
-
-    it "checks that the sell by date updates as expected" do
-      shop = GildedRose.new(item)
-      shop.update_quality
-      expect(item[0].sell_in).to eq(9)
-    end
-
-    it "checks that items degarde twice as fast after sell by date" do
-      item = [Item.new("My goodies", 0, 10)]
-      shop = GildedRose.new(item)
-      shop.update_quality
-      expect(item[0].quality).to eq(8)
-    end
-
-    it "checks that quality is never negative" do
-      item = [Item.new("My goodies", 10, 0)]
-      shop = GildedRose.new(item)
-      shop.update_quality
-      expect(item[0].quality).to eq(0)
-    end
-
-    it "checks that items can be update correctly multiple times" do
-      item = [Item.new("My goodies", 1, 10)]
-      shop = GildedRose.new(item)
-      shop.update_quality
-      shop.update_quality
-      expect(item[0].quality).to eq(7)
-    end
-  end
-
   describe "Aged Brie" do
 
     it "checks that quality increases over time" do
@@ -91,6 +60,13 @@ describe Item do
       shop = GildedRose.new(item)
       shop.update_quality
       expect(item[0].quality).to eq(13)
+    end
+
+    it "checks that quality can not increase above 50" do
+      item = [Item.new("Backstage passes to a TAFKAL80ETC concert", 2, 50)]
+      shop = GildedRose.new(item)
+      shop.update_quality
+      expect(item[0].quality).to eq(50)
     end
 
     it "checks that quality drops to 0 after sell by date" do
