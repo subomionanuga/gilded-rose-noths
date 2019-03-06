@@ -11,12 +11,4 @@ describe GildedRose do
     end
   end
 
-  describe "Normal Items" do
-
-    item = [Item.new("My goodies", 10, 50)]
-    it "checks that the item name is stored" do
-      expect(item[0].name).to eq("My goodies")
-    end
-  end
-
 end

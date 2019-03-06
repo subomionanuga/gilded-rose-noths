@@ -15,14 +15,6 @@
         null,
         null,
         null,
-        1,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null,
         null
       ],
       "/Users/student/Documents/projects/gilded-rose-noths/ruby/lib/gilded_rose.rb": [
@@ -79,8 +71,26 @@
         null,
         null,
         null,
+        null
+      ],
+      "/Users/student/Documents/projects/gilded-rose-noths/ruby/spec/item_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
         null,
         null,
+        null
+      ],
+      "/Users/student/Documents/projects/gilded-rose-noths/ruby/lib/item.rb": [
         1,
         1,
         null,
@@ -96,6 +106,6 @@
         null
       ]
     },
-    "timestamp": 1551806644
+    "timestamp": 1551871271
   }
 }
