@@ -5,6 +5,7 @@ require "./lib/item"
 require "./lib/aged_brie"
 require "./lib/sulfuras"
 require "./lib/backstage_passes"
+require "./lib/conjured"
 
 puts "OMGHAI!"
 items = [
@@ -17,7 +18,7 @@ items = [
   BackstagePasses.new(sell_in = 10, quality = 49),
   BackstagePasses.new(sell_in = 5, quality = 49),
   # This Conjured item does not work properly yet
-  Conjured.new(name = "Conjured Mana Cake", sell_in = 3, quality = 6), # <-- :O
+  Conjured.new(name = "Conjured Mana Cake", sell_in = 2, quality = 12), # <-- :O
 ]
 
 days = 8

@@ -2,7 +2,7 @@ require_relative "item"
 
 class NormalItem < Item
 
-  def reduce_sell_in
+  def update_item
     new_quality = @quality + self.quality_change
     if new_quality < 0
       @quality = 0

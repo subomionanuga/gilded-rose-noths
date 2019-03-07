@@ -6,7 +6,7 @@ class BackstagePasses< NormalItem
     super("Backstage passes to a TAFKAL80ETC concert", sell_in, quality)
   end
 
-  def reduce_sell_in
+  def update_item
     new_quality = @quality + self.quality_change
     @quality = new_quality > 50 ? 50 : new_quality
     @sell_in -= 1

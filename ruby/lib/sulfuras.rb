@@ -6,7 +6,7 @@ class Sulfuras < Item
     super("Sulfuras, Hand of Ragnaros", sell_in, quality)
   end
 
-  def reduce_sell_in
+  def update_item
   end
 
 end
