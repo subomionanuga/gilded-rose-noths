@@ -11,7 +11,6 @@ def reduce_sell_in
   else
     @quality = new_quality
   end
-  # @quality = new_quality < 0 ? 0 : new_quality
   @sell_in -= 1
 end
 
