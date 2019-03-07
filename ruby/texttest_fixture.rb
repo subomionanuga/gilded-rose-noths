@@ -9,16 +9,16 @@ require "./lib/conjured"
 
 puts "OMGHAI!"
 items = [
-  NormalItem.new(name = "+5 Dexterity Vest", sell_in = 10, quality = 20),
-  AgedBrie.new(sell_in = 2, quality = 0),
-  NormalItem.new(name = "Elixir of the Mongoose", sell_in = 5, quality = 7),
-  Sulfuras.new(sell_in = 0, quality = 80),
-  Sulfuras.new(sell_in = -1, quality = 80),
-  BackstagePasses.new(sell_in = 15, quality = 20),
-  BackstagePasses.new(sell_in = 10, quality = 49),
-  BackstagePasses.new(sell_in = 5, quality = 49),
+  NormalItem.new("+5 Dexterity Vest", 10, 20),
+  AgedBrie.new(2, 0),
+  NormalItem.new("Elixir of the Mongoose", 5, 7),
+  Sulfuras.new(0, 80),
+  Sulfuras.new(-1, 80),
+  BackstagePasses.new(15, 20),
+  BackstagePasses.new(10, 9),
+  BackstagePasses.new(5, 49),
   # This Conjured item does not work properly yet
-  Conjured.new(name = "Conjured Mana Cake", sell_in = 2, quality = 12), # <-- :O
+  Conjured.new("Conjured Mana Cake", 2, 12), # <-- :O
 ]
 
 days = 8
