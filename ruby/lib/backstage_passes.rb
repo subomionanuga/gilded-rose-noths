@@ -12,17 +12,21 @@ class BackstagePasses< NormalItem
   #   @quality = new_quality < 0 ? 0 : new_quality
   # end
 
-  # def quality_change
-  #    case @sell_in
-  #    when <= 0
-  #      0
-  #    when <= 5
-  #      3
-  #    when <= 10
-  #      2
-  #    else
-  #      1
-  #    end
+  def quality_change
+    if @sell_in < 6
+      3
+    elsif @sell_in <11
+      2
+    else
+      1
+    end
+    # concert_over?
+  end
+
+  # def concert_over?
+  #   if @sell_in < 0
+  #     @quality = 0
+  #   end
   # end
 
 end

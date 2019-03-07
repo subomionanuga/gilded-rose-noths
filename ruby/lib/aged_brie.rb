@@ -13,6 +13,6 @@ class AgedBrie < NormalItem
   # end
 
   def quality_change
-     @sell_in < 10 ? 2 : 1
+     @sell_in < 11 ? 2 : 1
   end
 end

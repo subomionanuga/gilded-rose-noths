@@ -17,8 +17,8 @@ describe "Normal Item" do
     expect(item[0].sell_in).to eq(9)
   end
 
-  it "checks that items degarde twice as fast after sell by date" do
-    item = [NormalItem.new("My goodies", 0, 10)]
+  it "checks that items degrade twice as fast after sell by date" do
+    item = [NormalItem.new("My goodies", -1, 10)]
     shop = GildedRose.new(item)
     shop.update_quality
     expect(item[0].quality).to eq(8)
@@ -32,7 +32,7 @@ describe "Normal Item" do
   end
 
   it "checks that items can be update correctly multiple times" do
-    item = [NormalItem.new("My goodies", 1, 10)]
+    item = [NormalItem.new("My goodies", 0, 10)]
     shop = GildedRose.new(item)
     shop.update_quality
     shop.update_quality

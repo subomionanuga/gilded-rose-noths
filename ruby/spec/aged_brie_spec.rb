@@ -3,7 +3,7 @@ require "aged_brie"
 describe "Aged Brie" do
 
   it "checks that quality increases over time" do
-    item = [AgedBrie.new(10, 10)]
+    item = [AgedBrie.new(11, 10)]
     shop = GildedRose.new(item)
     shop.update_quality
     expect(item[0].quality).to eq(11)
