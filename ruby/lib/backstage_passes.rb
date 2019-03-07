@@ -13,7 +13,9 @@ class BackstagePasses< NormalItem
   # end
 
   def quality_change
-    if @sell_in < 6
+    if @sell_in < 0
+      @quality = 0
+    elsif @sell_in < 6
       3
     elsif @sell_in <11
       2

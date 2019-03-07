@@ -4,7 +4,14 @@ class NormalItem < Item
 
 def reduce_sell_in
   new_quality = @quality + self.quality_change
-  @quality = new_quality < 0 ? 0 : new_quality
+  if new_quality < 0
+    @quality = 0
+  elsif new_quality > 50
+    @quality = 50
+  else
+    @quality = new_quality
+  end
+  # @quality = new_quality < 0 ? 0 : new_quality
   @sell_in -= 1
 end
 
