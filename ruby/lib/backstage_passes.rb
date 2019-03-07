@@ -8,13 +8,7 @@ class BackstagePasses< NormalItem
 
   def reduce_sell_in
     new_quality = @quality + self.quality_change
-    if new_quality < 0
-      @quality = 0
-    elsif new_quality > 50
-      @quality = 50
-    else
-      @quality = new_quality
-    end
+    @quality = new_quality > 50 ? 50 : new_quality
     @sell_in -= 1
     concert_over?
   end
