@@ -7,6 +7,8 @@ class Sulfuras < Item
   end
 
   def update_item
+    raise "Sulfuras can only be 80" if @quality != 80
+    raise "Sulfuras cannot be sold" if @sell_in != 0
   end
 
 end
