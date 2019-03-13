@@ -13,7 +13,7 @@ items = [
   AgedBrie.new(2, 0),
   NormalItem.new("Elixir of the Mongoose", 5, 7),
   Sulfuras.new(0, 80),
-  Sulfuras.new(-1, 80),
+  Sulfuras.new(0, 80),
   BackstagePasses.new(15, 20),
   BackstagePasses.new(10, 9),
   BackstagePasses.new(5, 49),
